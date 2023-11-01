@@ -1,7 +1,7 @@
 const Nav = () => {
 	return (
 		<nav>
-			<ul>
+			<ul className="flex gap-2">
 				<li>
 					<button>Resume</button>
 				</li>
