@@ -1,3 +1,6 @@
+import { IconContext } from 'react-icons';
+import { IoIosMenu } from 'react-icons/io';
+
 const Nav = () => {
 	return (
 		<nav>
