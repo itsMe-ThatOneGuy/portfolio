@@ -1,10 +1,12 @@
 const About = () => {
 	return (
 		<section>
-			<div className="flex flex-col items-center">
-				<div className="flex flex-col justify-center w-4/5 mt-20 mb-12">
-					<h2 className="text-lg mb-3 pb-2">Hi, I am Matthew Smart!</h2>
-					<p className="indent-10 ">
+			<div className="flex flex-col items-center bg-gradient-to-b from-vpurp to-dcyan">
+				<div className="flex flex-col justify-center w-4/5 mt-20 mb-9 p-5 rounded-3xl bg-grrey">
+					<h2 className="text-lg mb-1 pb-2 text-plat">
+						Hi, I am <span className="text-vpurp">Matthew Smart</span>!
+					</h2>
+					<p className="indent-10 text-plat">
 						I'm a self-taught web developer with over 3 years of experience. At
 						a young age, I developed a love for technology and art. After some
 						time of working in IT while pursuing a career in the arts and music,
@@ -17,7 +19,9 @@ const About = () => {
 				<div className="flex flex-col gap-5 justify-evenly items-center text-center">
 					<div className="flex flex-col justify-center p-3 w-4/5">
 						<div>
-							<h2 className="text-lg font-semibold mb-3 pb-2">Frontend</h2>
+							<h2 className="text-xl font-semibold mb-3 pb-2 text-plat">
+								Frontend
+							</h2>
 						</div>
 						<div className="flex flex-wrap justify-center items-center gap-3 text-6xl">
 							<i className="devicon-html5-plain colored"></i>
@@ -29,23 +33,25 @@ const About = () => {
 					</div>
 					<div className="flex flex-col justify-center p-3 w-4/5">
 						<div>
-							<h2 className="text-lg font-semibold mb-3 pb-2">Backend</h2>
+							<h2 className="text-xl font-semibold mb-3 pb-2 text-plat">
+								Backend
+							</h2>
 						</div>
 						<div className=" flex flex-wrap justify-center items-center gap-3 text-6xl">
 							<i className="devicon-nodejs-plain-wordmark colored"></i>
-							<i className="devicon-express-original colored"></i>
+							<i className="devicon-express-original"></i>
 							<img
 								className="w-14"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
 							/>
 							<i className="devicon-mongodb-plain-wordmark colored"></i>
 							<i className="devicon-mongoose-original colored"></i>
-							<i className="devicon-mysql-plain-wordmark colored"></i>
+							<i className="devicon-mysql-plain-wordmark"></i>
 						</div>
 					</div>
 					<div className="flex flex-col justify-center p-3 w-4/5">
 						<div>
-							<h2 className="text-lg font-semibold mb-3 pb-2">
+							<h2 className="text-xl font-semibold mb-3 pb-2 text-plat">
 								Tools & technologies
 							</h2>
 						</div>
@@ -96,7 +102,7 @@ const About = () => {
 					</div>
 				</div>
 				<div className="mt-12 mb-20">
-					<h2 className="text-lg font-semibold">
+					<h2 className="text-xl font-semibold">
 						<span>
 							<a>RESUME</a>
 						</span>{' '}
