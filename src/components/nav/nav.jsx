@@ -2,7 +2,7 @@ import { IconContext } from 'react-icons';
 import { IoIosMenu } from 'react-icons/io';
 import { IoMdExit } from 'react-icons/io';
 
-const Nav = () => {
+const Nav = (props) => {
 	return (
 		<nav>
 			<div className="text-xl hidden md:flex md:my-2 md:mr-5">
@@ -17,8 +17,11 @@ const Nav = () => {
 			</div>
 			<div className="mr-5 md:hidden">
 				<IconContext.Provider value={{ size: '3em' }}>
-					<div>
-						<IoIosMenu />
+					<div
+						onClick={() => {
+							props.handleClick();
+						}}
+					>
 						{!props.mobileMenu ? <IoIosMenu /> : <IoMdExit />}
 					</div>
 				</IconContext.Provider>
