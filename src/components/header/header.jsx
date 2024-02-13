@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import userScroll from '../../hooks/userScroll';
 import Nav from '../nav/nav';
 
 const Header = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
+
+	const scrollDirection = userScroll();
 
 	const body = document.querySelector('body');
 	const toggleBodyOverflow = () => {
@@ -21,7 +24,11 @@ const Header = () => {
 	};
 
 	return (
-		<header className="sticky top-0 z-50">
+		<header
+			className={`sticky z-50 ${
+				scrollDirection === 'down' ? '-top-24' : 'top-0'
+			} transition-all duration-500`}
+		>
 			<div className="flex justify-between p-3 bg-grrey">
 				<div className="text-2xl font-bold my-1 ml-5">
 					<p className="tracking-wide text-plat">Matthew Smart</p>
