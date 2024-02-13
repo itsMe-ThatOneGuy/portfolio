@@ -26,7 +26,17 @@ const Header = () => {
 				<div className="text-2xl font-bold my-1 ml-5">
 					<p className="tracking-wide text-plat">Matthew Smart</p>
 				</div>
-				<Nav />
+				<Nav handleClick={handleClick} mobileMenu={mobileMenu} />
+			</div>
+			<div className={!mobileMenu ? 'menu' : 'menu active'}>
+				<ul className="relative flex flex-col items-center text-3xl top-32">
+					<li className="pb-14">
+						<button>Resume</button>
+					</li>
+					<li className="pb-14">About</li>
+					<li className="pb-14">Projects</li>
+					<li>Contact</li>
+				</ul>
 			</div>
 		</header>
 	);
