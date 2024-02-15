@@ -16,15 +16,19 @@ const Nav = (props) => {
 				</ul>
 			</div>
 			<div className="mr-5 md:hidden">
-				<IconContext.Provider value={{ size: '3em' }}>
-					<div
-						onClick={() => {
-							props.handleClick();
-						}}
-					>
-						{!props.mobileMenu ? <IoIosMenu /> : <IoMdExit />}
-					</div>
-				</IconContext.Provider>
+				<div
+					onClick={() => {
+						props.handleClick();
+					}}
+				>
+					<IconContext.Provider value={{ size: '3em', color: '#390040' }}>
+						{!props.mobileMenu ? <IoIosMenu /> : ''}
+					</IconContext.Provider>
+
+					<IconContext.Provider value={{ size: '3em', color: 'red' }}>
+						{props.mobileMenu ? <IoMdExit /> : ''}
+					</IconContext.Provider>
+				</div>
 			</div>
 		</nav>
 	);
