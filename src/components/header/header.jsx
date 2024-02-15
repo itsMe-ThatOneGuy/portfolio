@@ -29,7 +29,7 @@ const Header = () => {
 				scrollDirection === 'down' ? '-top-24' : 'top-0'
 			} transition-all duration-500`}
 		>
-			<div className="flex justify-between p-3 bg-grrey">
+			<div className="flex justify-between p-2 bg-grrey">
 				<div className="text-2xl font-bold my-1 ml-5">
 					<p className="tracking-wide text-plat">Matthew Smart</p>
 				</div>

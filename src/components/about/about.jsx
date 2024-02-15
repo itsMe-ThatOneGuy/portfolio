@@ -4,7 +4,8 @@ const About = () => {
 			<div className="flex flex-col items-center bg-gradient-to-b from-vpurp to-dcyan">
 				<div className="flex flex-col justify-center w-4/5 mt-20 mb-9 p-5 rounded-3xl bg-grrey">
 					<h2 className="text-lg mb-1 pb-2 text-plat">
-						Hi, I am <span className="text-vpurp">Matthew Smart</span>!
+						Hi, I am <span className="text-vpurp font-bold">Matthew Smart</span>
+						!
 					</h2>
 					<p className="indent-10 text-plat">
 						I'm a self-taught web developer with over 3 years of experience. At

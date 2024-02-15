@@ -4,24 +4,24 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 const Hero = () => {
 	return (
 		<section className="h-[calc(100vh-74px)]">
-			<div className="background-container h-full flex flex-col justify-evenly items-center">
-				<div className="content-container flex flex-col items-center">
+			<div className="h-full flex flex-col justify-evenly items-center bg-gradient-to-b from-purp to-vpurp">
+				<div className="flex flex-col items-center">
 					<div className="image-container">
 						<img
-							className="w-52 rounded-full border-2 border-black mb-16"
+							className="w-52 rounded-full border-2 border-vpurp mb-6 drop-shadow-xl"
 							src="../../../public/profile.jpg"
 						/>
 					</div>
-					<div className="content-container text-center">
-						<div className="title-container p-3">
-							<h1 className="text-3xl font-extrabold mb-2">
+					<div className="text-center py-2 rounded-3xl bg-grrey w-4/5">
+						<div className="p-3">
+							<h1 className="text-3xl text-plat font-extrabold mb-2 underline decoration-dcyan decoration-2">
 								Fullstack Developement & Design
 							</h1>
-							<h2 className="text-1xl font-normal mb-3">
+							<h2 className="text-xl font-semibold mb-2">
 								Solving Problems by Creating Beautiful Solutions
 							</h2>
 						</div>
-						<div className="link-container">
+						<div className="mb-3">
 							<ul className="flex justify-center gap-5">
 								<IconContext.Provider
 									value={{ size: '2.5em', color: '#171515' }}
@@ -53,8 +53,8 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
-				<div className="button-container">
-					<button className="text-center p-3 px-7 text-lg tracking-widest font-bold border-2 border-black rounded-full">
+				<div>
+					<button className="text-center p-3 px-7 mt-14 text-lg tracking-widest font-bold border-2 border-black rounded-full bg-grrey text-plat">
 						Resume
 					</button>
 				</div>
