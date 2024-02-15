@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	body.active {
+		@apply overflow-hidden;
+	}
+
+	.menu {
+		@apply fixed top-16 h-0 m-auto w-full bg-grrey bg-opacity-90 overflow-hidden;
+	}
+
+	.menu.active {
+		@apply h-screen;
+	}
+}
