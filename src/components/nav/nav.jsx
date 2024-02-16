@@ -1,6 +1,6 @@
 import { IconContext } from 'react-icons';
 import { IoIosMenu } from 'react-icons/io';
-import { IoMdExit } from 'react-icons/io';
+import { IoCloseSharp } from 'react-icons/io5';
 
 const Nav = (props) => {
 	return (
@@ -26,7 +26,7 @@ const Nav = (props) => {
 					</IconContext.Provider>
 
 					<IconContext.Provider value={{ size: '3em', color: 'red' }}>
-						{props.mobileMenu ? <IoMdExit /> : ''}
+						{props.mobileMenu ? <IoCloseSharp /> : ''}
 					</IconContext.Provider>
 				</div>
 			</div>
