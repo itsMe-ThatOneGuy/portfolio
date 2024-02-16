@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
 	console.log(props);
 
 	return (
-		<div className="flex flex-col space-y-2 m-6 ">
+		<div className="flex flex-col space-y-2 p-6">
 			<img
 				width={'343px'}
 				height={'166px'}
