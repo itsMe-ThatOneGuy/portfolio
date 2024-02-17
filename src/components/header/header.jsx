@@ -43,11 +43,53 @@ const Header = () => {
 			<div className={!mobileMenu ? 'menu' : 'menu active'}>
 				<ul className="relative flex flex-col items-center text-3xl top-20">
 					<li className="pb-14">
+						<a
+							onClick={() => {
+								handleClick();
+							}}
+							href="#home"
+						>
+							Home
+						</a>
+					</li>
+					<li className="pb-14">
+						<a
+							onClick={() => {
+								handleClick();
+							}}
+							href="#about"
+						>
+							About
+						</a>
+					</li>
+					<li className="pb-14">
+						<a
+							onClick={() => {
+								handleClick();
+							}}
+							href="#projects"
+						>
+							Projects
+						</a>
+					</li>
+					<li className="pb-14">
+						<a
+							onClick={() => {
+								handleClick();
+							}}
+							href="#contact"
+						>
+							Contact
+						</a>
+					</li>
+					<li className="pb-14">
 						<button>Resume</button>
 					</li>
-					<li className="pb-14">About</li>
-					<li className="pb-14">Projects</li>
-					<li>Contact</li>
+					<IconContext.Provider value={{ color: '#E6E8E6' }}>
+						<li className="pb-14">
+							<FaGhost />
+						</li>
+					</IconContext.Provider>
 				</ul>
 			</div>
 		</header>
