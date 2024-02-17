@@ -24,12 +24,22 @@ const About = () => {
 								Frontend
 							</h2>
 						</div>
-						<div className="flex flex-wrap justify-center items-center gap-3 text-6xl">
-							<i className="devicon-html5-plain colored"></i>
-							<i className="devicon-css3-plain colored"></i>
-							<i className="devicon-javascript-plain colored"></i>
-							<i className="devicon-react-original colored"></i>
-							<i className="devicon-tailwindcss-original colored"></i>
+						<div className="grid grid-cols-4 items-center gap-3 text-6xl">
+							<div className="flex justify-center items-center">
+								<i className="devicon-html5-plain colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-css3-plain colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-javascript-plain colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-react-original colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-tailwindcss-original colored"></i>
+							</div>
 						</div>
 					</div>
 					<div className="flex flex-col justify-center mb-4 w-4/5">
@@ -38,16 +48,28 @@ const About = () => {
 								Backend
 							</h2>
 						</div>
-						<div className=" flex flex-wrap justify-center items-center gap-3 text-6xl">
-							<i className="devicon-nodejs-plain-wordmark colored"></i>
-							<i className="devicon-express-original"></i>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
-							/>
-							<i className="devicon-mongodb-plain-wordmark colored"></i>
-							<i className="devicon-mongoose-original colored"></i>
-							<i className="devicon-mysql-plain-wordmark"></i>
+						<div className="grid grid-cols-4 items-center gap-3 text-6xl">
+							<div className="flex justify-center items-center">
+								<i className="devicon-nodejs-plain-wordmark colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-express-original"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+								/>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-mongodb-plain-wordmark colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-mongoose-original colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-mysql-plain-wordmark"></i>
+							</div>
 						</div>
 					</div>
 					<div className="flex flex-col justify-center mb-4 w-4/5">
@@ -56,49 +78,77 @@ const About = () => {
 								Tools & technologies
 							</h2>
 						</div>
-						<div className="flex flex-wrap justify-center items-center gap-3 text-6xl">
-							<i className="devicon-npm-original-wordmark colored"></i>
-							<i className="devicon-git-plain colored"></i>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-							/>
-							<i className="devicon-jest-plain colored"></i>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg"
-							/>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
-							/>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg"
-							/>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
-							/>
-							<div>
+						<div className="grid grid-cols-4 items-center gap-3 text-6xl">
+							<div className="flex justify-center items-center">
+								<i className="devicon-npm-original-wordmark colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-git-plain colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+								/>
+							</div>
+							<div className="flex justify-center items-center">
+								<i className="devicon-jest-plain colored"></i>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg"
+								/>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+								/>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg"
+								/>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+								/>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+								/>
+							</div>
+							<div className="flex flex-col justify-center items-center">
 								<img
 									className="w-11"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg"
 								/>
 								<p className="text-center text-sm">(BTW)</p>
 							</div>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg"
-							/>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-							/>
-							<img
-								className="w-14"
-								src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"
-							/>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg"
+								/>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+								/>
+							</div>
+							<div className="flex justify-center items-center">
+								<img
+									className="w-14"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
