@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+	html {
+		@apply scroll-smooth;
+	}
+
 	body.active {
 		@apply overflow-hidden;
 	}
