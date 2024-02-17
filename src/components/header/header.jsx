@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import userScroll from '../../hooks/userScroll';
 import Nav from '../nav/nav';
+import { FaGhost } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 const Header = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
@@ -30,7 +32,11 @@ const Header = () => {
 			} transition-all duration-500`}
 		>
 			<div className="flex justify-between p-2 bg-grrey">
-					<p className="tracking-wide text-plat">Matthew Smart</p>
+				<div className="text-2xl font-bold my-1 ml-5 flex gap-1 items-center">
+					<IconContext.Provider value={{ color: '#730071' }}>
+						<FaGhost />
+					</IconContext.Provider>
+					<p className="tracking-wide text-plat"> Matthew Smart</p>
 				</div>
 				<Nav handleClick={handleClick} mobileMenu={mobileMenu} />
 			</div>
