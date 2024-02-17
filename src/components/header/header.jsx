@@ -29,7 +29,7 @@ const Header = () => {
 		<header
 			className={`sticky z-50 ${
 				scrollDirection === 'down' ? '-top-24' : 'top-0'
-			} transition-all duration-500`}
+			} transition-all ease-in-out duration-500`}
 		>
 			<div className="flex justify-between p-2 bg-grrey">
 				<div className="text-2xl font-bold my-1 ml-5 flex gap-1 items-center">
