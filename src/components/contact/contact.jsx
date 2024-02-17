@@ -7,7 +7,7 @@ import { GiPinballFlipper } from 'react-icons/gi';
 
 const Contact = () => {
 	return (
-		<section id="contact" className="scroll-m-10">
+		<section id="contact">
 			<div className="flex flex-col bg-gradient-to-b from-vpurp to-purp">
 				<div className="p-3 mb-8 mx-2 mt-10">
 					<h2 className="text-2xl font-bold text-plat">Contact / Connect</h2>
