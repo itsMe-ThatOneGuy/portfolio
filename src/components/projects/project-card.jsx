@@ -21,8 +21,8 @@ const ProjectCard = (props) => {
 					<h3 className="text-lg text-grrey">{props.project.sub}</h3>
 				</div>
 				<div>
-					<div className="mb-3">
-						<ul className="flex flex-wrap gap-1 text-sm">
+					<div className="mb-4">
+						<ul className="flex flex-wrap gap-1 text-sm text-vpurp">
 							{props.project.tools.map((e) => {
 								return (
 									<li
@@ -38,14 +38,14 @@ const ProjectCard = (props) => {
 					<div>
 						<ul className="flex justify-end items-center gap-5">
 							<IconContext.Provider value={{ size: '2.5em' }}>
-								<li className="font-semibold text-grrey">
+								<li className="font-semibold">
 									<a href={props.project.live} rel="noreferrer" target="_blank">
 										<CiLink />
 									</a>
 								</li>
 							</IconContext.Provider>
 							<IconContext.Provider value={{ size: '2em' }}>
-								<li className="font-semibold text-grrey">
+								<li className="font-semibold">
 									<a href={props.project.repo} rel="noreferrer" target="_blank">
 										<FiGithub />
 									</a>

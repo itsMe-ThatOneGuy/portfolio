@@ -5,7 +5,7 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 
 const Hero = () => {
 	return (
-		<section id="home" className="h-[calc(100vh-74px)]">
+		<section id="home" className="h-[calc(100vh-65px)] scroll-m-[65px]">
 			<div className="h-full flex flex-col justify-evenly items-center bg-gradient-to-b from-purp to-vpurp">
 				<div className="flex flex-col items-center">
 					<div className="p-3 text-center">
@@ -13,7 +13,7 @@ const Hero = () => {
 							Fullstack Developement & Design
 						</h1>
 						<h2 className="text-xl text-grrey font-semibold mb-3">
-							Solving Problems by Creating Beautiful Solutions
+							Solving Problems With Beautiful Solutions
 						</h2>
 					</div>
 					<div>

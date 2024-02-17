@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<footer className="bg-grrey h-fit">
 			<div className="flex flex-col justify-center items-center p-5">
-				<div>
+				<div className="scroll-smooth transition-all ease-in-out duration-300">
 					<IconContext.Provider value={{ size: '2em', color: '#E6E8E6' }}>
 						<a href="#home">
 							<RiArrowUpDoubleLine />

@@ -1,8 +1,8 @@
 const About = () => {
 	return (
-		<section id="about">
-			<div className="flex flex-col items-center bg-gradient-to-b from-vpurp to-dcyan">
-				<div className="flex flex-col justify-center w-4/5 mt-6 mb-9 p-5 rounded-3xl bg-grrey">
+		<section id="about" className="scroll-m-10">
+			<div className="flex flex-col items-center bg-gradient-to-b from-vpurp to-dcyan w-full">
+				<div className="flex flex-col justify-center w-4/5 mt-10 mb-16 p-5 rounded-3xl bg-grrey">
 					<h2 className="text-lg mb-1 pb-2 text-plat">
 						Hi, I am <span className="text-vpurp font-bold">Matthew Smart</span>
 						!
@@ -17,10 +17,10 @@ const About = () => {
 						Python before finding web development.
 					</p>
 				</div>
-				<div className="flex flex-col gap-5 justify-evenly items-center text-center">
-					<div className="flex flex-col justify-center p-3 w-4/5">
+				<div className="flex flex-col gap-5 justify-evenly items-center text-center w-full">
+					<div className="flex flex-col justify-center mb-4 w-4/5">
 						<div>
-							<h2 className="text-xl font-semibold mb-3 pb-2 text-plat">
+							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
 								Frontend
 							</h2>
 						</div>
@@ -32,9 +32,9 @@ const About = () => {
 							<i className="devicon-tailwindcss-original colored"></i>
 						</div>
 					</div>
-					<div className="flex flex-col justify-center p-3 w-4/5">
+					<div className="flex flex-col justify-center mb-4 w-4/5">
 						<div>
-							<h2 className="text-xl font-semibold mb-3 pb-2 text-plat">
+							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
 								Backend
 							</h2>
 						</div>
@@ -50,9 +50,9 @@ const About = () => {
 							<i className="devicon-mysql-plain-wordmark"></i>
 						</div>
 					</div>
-					<div className="flex flex-col justify-center p-3 w-4/5">
+					<div className="flex flex-col justify-center mb-4 w-4/5">
 						<div>
-							<h2 className="text-xl font-semibold mb-3 pb-2 text-plat">
+							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
 								Tools & technologies
 							</h2>
 						</div>
@@ -102,7 +102,8 @@ const About = () => {
 						</div>
 					</div>
 				</div>
-				<div className="mt-12 mb-20">
+
+				<div className="mt-12 mb-12">
 					<h2 className="text-xl font-semibold">
 						<span>
 							<a>RESUME</a>

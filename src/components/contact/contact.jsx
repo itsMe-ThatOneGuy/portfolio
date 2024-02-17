@@ -7,9 +7,9 @@ import { GiPinballFlipper } from 'react-icons/gi';
 
 const Contact = () => {
 	return (
-		<section id="contact">
+		<section id="contact" className="scroll-m-10">
 			<div className="flex flex-col bg-gradient-to-b from-vpurp to-purp">
-				<div className="p-3 mb-8 mx-2 mt-16">
+				<div className="p-3 mb-8 mx-2 mt-10">
 					<h2 className="text-2xl font-bold text-plat">Contact / Connect</h2>
 				</div>
 				<div className="flex flex-col items-center">
@@ -18,7 +18,7 @@ const Contact = () => {
 						src="../../../public/profile.jpg"
 					/>
 				</div>
-				<div className="mx-auto mb-8">
+				<div className="mx-auto">
 					<ul className="flex flex-col p-5">
 						<li className="flex items-center gap-5 mb-5">
 							<IconContext.Provider value={{ size: '2em', color: 'skyblue' }}>
@@ -76,7 +76,7 @@ const Contact = () => {
 								<p className="text-lg font-semibold">itsme_thatoneguy</p>
 							</a>
 						</li>
-						<li className="flex items-center gap-5 mb-3">
+						<li className="flex items-center gap-5 mb-5">
 							<IconContext.Provider value={{ size: '2em' }}>
 								<div className="bg-dcyan rounded-full p-3 text-center">
 									<FaXTwitter />
@@ -92,7 +92,7 @@ const Contact = () => {
 								</p>
 							</a>
 						</li>
-						<li className="flex items-center gap-5 mb-3">
+						<li className="flex items-center gap-5 mb-5">
 							<IconContext.Provider value={{ size: '2em', color: 'silver' }}>
 								<div className="bg-dcyan rounded-full p-3 text-center">
 									<GiPinballFlipper />
