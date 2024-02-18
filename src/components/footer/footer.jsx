@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<footer className="bg-grrey h-fit">
 			<div className="flex flex-col justify-center items-center p-5">
-				<div className="scroll-smooth transition-all ease-in-out duration-300">
+				<div>
 					<IconContext.Provider value={{ size: '2em', color: '#E6E8E6' }}>
 						<a href="#home">
 							<RiArrowUpDoubleLine />
@@ -18,7 +18,7 @@ const Footer = () => {
 						<span className="text-vpurp">2024</span>
 					</p>
 				</div>
-				<div className="text-xs p-3">
+				<div className="text-xs p-3 flex flex-col items-center">
 					<p>Designed and Developed by me.</p>
 					<p>
 						Coded in <span className="text-vpurp font-bold">NeoVim</span>, built
