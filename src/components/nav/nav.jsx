@@ -7,12 +7,18 @@ const Nav = (props) => {
 		<nav>
 			<div className="text-xl hidden md:flex md:my-2 md:mr-5">
 				<ul className="flex gap-2">
-					<li className="pr-5 pl-5">
+					<li className="pr-5">
+						<a href="#about">About</a>
+					</li>
+					<li className="pr-5">
+						<a href="#projects">Projects</a>
+					</li>
+					<li className="pr-5">
+						<a href="#contact">Contact</a>
+					</li>
+					<li className="pr-5">
 						<button>Resume</button>
 					</li>
-					<li className="pr-5">About</li>
-					<li className="pr-5">Projects</li>
-					<li>Contact</li>
 				</ul>
 			</div>
 			<div className="mr-5 md:hidden">
