@@ -1,13 +1,13 @@
 const About = () => {
 	return (
 		<section id="about" className="scroll-m-8">
-			<div className="flex flex-col items-center bg-gradient-to-b from-vpurp to-dcyan w-full">
-				<div className="flex flex-col justify-center w-4/5 mt-10 mb-16 p-5 rounded-3xl bg-grrey">
+			<div className="flex flex-col items-center bg-gradient-to-b from-vpurp to-dcyan w-full lg:gap-y-11">
+				<div className="flex flex-col justify-center w-4/5 mt-10 mb-16 p-5 rounded-3xl bg-grrey lg:w-1/2 lg:p-8">
 					<h2 className="text-lg mb-1 pb-2 text-plat">
 						Hi, I am <span className="text-vpurp font-bold">Matthew Smart</span>
 						!
 					</h2>
-					<p className="indent-5 text-plat">
+					<p className="indent-5 text-plat lg:indent-8">
 						I'm a self-taught web developer with over 3 years of experience. At
 						a young age, I developed a love for technology and art. After some
 						time of working in IT while pursuing a career in the arts and music,
@@ -17,14 +17,14 @@ const About = () => {
 						Python before finding web development.
 					</p>
 				</div>
-				<div className="flex flex-col gap-5 justify-evenly items-center text-center w-full">
-					<div className="flex flex-col justify-center mb-4 w-4/5">
+				<div className="flex flex-col gap-5 justify-evenly items-center text-center w-full lg:grid lg:grid-cols-3 lg:w-[65%] lg:items-start lg:gap-11">
+					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
 							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
 								Frontend
 							</h2>
 						</div>
-						<div className="grid grid-cols-4 items-center gap-3 text-6xl">
+						<div className="grid grid-cols-4 items-center gap-3 text-6xl justify-center">
 							<div className="flex justify-center items-center">
 								<i className="devicon-html5-plain colored"></i>
 							</div>
@@ -42,7 +42,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col justify-center mb-4 w-4/5">
+					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
 							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
 								Backend
@@ -72,7 +72,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col justify-center mb-4 w-4/5">
+					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
 							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
 								Tools & technologies

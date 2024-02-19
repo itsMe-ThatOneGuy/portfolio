@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
 	console.log(props);
 
 	return (
-		<div className="flex flex-col space-y-2 p-6">
+		<div className="flex flex-col space-y-2 p-6 lg:grid lg:grid-cols-2 lg:gap-3">
 			<img
 				width={'343px'}
 				height={'166px'}
@@ -22,7 +22,7 @@ const ProjectCard = (props) => {
 				</div>
 				<div>
 					<div className="mb-4">
-						<ul className="flex flex-wrap gap-1 text-sm text-vpurp">
+						<ul className="flex flex-wrap gap-1.5 text-sm text-vpurp">
 							{props.project.tools.map((e) => {
 								return (
 									<li
