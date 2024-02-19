@@ -36,7 +36,9 @@ const Header = () => {
 					<IconContext.Provider value={{ color: '#730071' }}>
 						<FaGhost />
 					</IconContext.Provider>
-					<p className="tracking-wide text-plat"> Matthew Smart</p>
+					<a href="#home" className="tracking-wide text-plat">
+						Matthew Smart
+					</a>
 				</div>
 				<Nav handleClick={handleClick} mobileMenu={mobileMenu} />
 			</div>
