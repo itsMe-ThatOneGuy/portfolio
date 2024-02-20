@@ -154,31 +154,9 @@ const About = () => {
 				</div>
 
 				<div className="mt-12 mb-12">
-					<h2 className="text-xl font-semibold">
-						<span>
-							<a>RESUME</a>
-						</span>{' '}
-						/{' '}
-						<span>
-							<a
-								href="https://github.com/itsMe-ThatOneGuy"
-								rel="noreferrer"
-								target="_blank"
-							>
-								GITHUB
-							</a>
-						</span>{' '}
-						/{' '}
-						<span>
-							<a
-								href="https://github.com/itsMe-ThatOneGuy"
-								rel="noreferrer"
-								target="_blank"
-							>
-								LINKEDIN
-							</a>
-						</span>
-					</h2>
+					<button className="py-3 px-6 bg-grrey border-2 border-plat rounded-full">
+						<h2 className="text-xl font-semibold">Resume</h2>
+					</button>
 				</div>
 			</div>
 		</section>
