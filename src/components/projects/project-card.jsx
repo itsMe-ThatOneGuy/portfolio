@@ -15,19 +15,21 @@ const ProjectCard = (props) => {
 			/>
 			<div className="inline-block p-3">
 				<div className="mb-4">
-					<h2 className="text-xl text-plat mb-2 underline decoration-dcyan">
+					<h2 className="text-xl text-plat font-semibold mb-2 underline decoration-dcyan">
 						{props.project.title}
 					</h2>
-					<h3 className="text-lg text-grrey">{props.project.sub}</h3>
+					<h3 className="text-lg font-medium text-grrey">
+						{props.project.sub}
+					</h3>
 				</div>
 				<div>
 					<div className="mb-4">
-						<ul className="flex flex-wrap gap-1.5 text-sm text-vpurp">
+						<ul className="flex flex-wrap gap-1.5 text-sm text-plat">
 							{props.project.tools.map((e) => {
 								return (
 									<li
 										key={props.project.tools.indexOf(e)}
-										className="p-1 bg-plat"
+										className="p-1 bg-purp"
 									>
 										{e}
 									</li>
