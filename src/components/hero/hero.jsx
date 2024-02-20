@@ -6,13 +6,13 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 const Hero = () => {
 	return (
 		<section id="home" className="h-[calc(100vh-65px)] scroll-m-[65px]">
-			<div className="h-full flex flex-col justify-evenly items-center bg-gradient-to-b from-purp to-vpurp">
-				<div className="flex flex-col items-center">
+			<div className="h-full flex flex-col justify-evenly items-center bg-gradient-to-b from-purp to-vpurp lg:justify-end">
+				<div className="flex flex-col items-center lg:mb-36">
 					<div className="p-3 text-center">
-						<h1 className="text-3xl text-plat font-extrabold mb-2 underline decoration-dcyan decoration-2">
+						<h1 className="text-3xl text-plat font-extrabold mb-2 underline decoration-dcyan decoration-2 lg:mb-3">
 							Fullstack Developement & Design
 						</h1>
-						<h2 className="text-xl text-grrey font-semibold mb-3">
+						<h2 className="text-xl text-grrey font-bold mb-3 lg:mb-5">
 							Solving Problems With Beautiful Solutions
 						</h2>
 					</div>
@@ -37,7 +37,7 @@ const Hero = () => {
 								</li>
 							</IconContext.Provider>
 							<IconContext.Provider value={{ size: '2em' }}>
-								<li className="bg-dcyan rounded-full p-3">
+								<li className="bg-dcyan rounded-full p-3 ">
 									<a
 										href="https://www.linkedin.com/in/matthew-smart13"
 										rel="noreferrer"
@@ -50,9 +50,9 @@ const Hero = () => {
 						</ul>
 					</div>
 				</div>
-				<div className="mb-11">
+				<div className="mb-11 lg:mb-28">
 					<img
-						className="w-52 rounded-full drop-shadow-xl"
+						className="w-52 rounded-full border-2 border-vpurp drop-shadow-xl"
 						src="../../../public/myicon.png"
 					/>
 				</div>
