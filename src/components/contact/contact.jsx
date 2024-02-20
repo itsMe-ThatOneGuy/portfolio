@@ -13,7 +13,7 @@ const Contact = () => {
 					<div className="p-3 mb-8 mx-2 mt-10">
 						<h2 className="text-2xl font-bold text-plat">Contact / Connect</h2>
 					</div>
-					<div className="flex flex-col items-center lg:flex-row lg:gap-10 mx-auto">
+					<div className="flex flex-col items-center lg:flex-row lg:gap-14 mx-auto">
 						<div>
 							<img
 								className="w-52 rounded-full border-2 border-vpurp mb-6 drop-shadow-xl"
@@ -24,9 +24,7 @@ const Contact = () => {
 							<ul className="flex flex-col p-5 lg:grid lg:grid-cols-2 lg:gap-3">
 								<li className="flex items-center gap-5 mb-5">
 									<div className="bg-dcyan rounded-full p-3 text-center">
-										<IconContext.Provider
-											value={{ size: '2em', color: 'skyblue' }}
-										>
+										<IconContext.Provider value={{ size: '2em' }}>
 											<IoMailOutline />
 										</IconContext.Provider>
 									</div>
@@ -38,9 +36,7 @@ const Contact = () => {
 								</li>
 								<li className="flex items-center gap-5 mb-5">
 									<div className="bg-dcyan rounded-full p-3 text-center">
-										<IconContext.Provider
-											value={{ size: '2em', color: '#171515' }}
-										>
+										<IconContext.Provider value={{ size: '2em' }}>
 											<FiGithub />
 										</IconContext.Provider>
 									</div>
@@ -56,9 +52,7 @@ const Contact = () => {
 								</li>
 								<li className="flex items-center gap-5 mb-5">
 									<div className="bg-dcyan rounded-full p-3 text-center">
-										<IconContext.Provider
-											value={{ size: '2em', color: '#0A66C2' }}
-										>
+										<IconContext.Provider value={{ size: '2em' }}>
 											<FaLinkedinIn />
 										</IconContext.Provider>
 									</div>
@@ -72,11 +66,9 @@ const Contact = () => {
 										</p>
 									</a>
 								</li>
-								<li className="flex items-center text-plat gap-5 mb-5">
+								<li className="flex items-center gap-5 mb-5">
 									<div className="bg-dcyan rounded-full p-3 text-center">
-										<IconContext.Provider
-											value={{ size: '2em', color: '#cd486b' }}
-										>
+										<IconContext.Provider value={{ size: '2em' }}>
 											<FaInstagram />
 										</IconContext.Provider>
 									</div>
@@ -85,7 +77,9 @@ const Contact = () => {
 										rel="noreferrer"
 										target="_blank"
 									>
-										<p className="text-lg font-semibold">itsme_thatoneguy</p>
+										<p className="text-lg text-plat font-semibold">
+											itsme_thatoneguy
+										</p>
 									</a>
 								</li>
 								<li className="flex items-center gap-5 mb-5">
@@ -106,9 +100,7 @@ const Contact = () => {
 								</li>
 								<li className="flex items-center gap-5 mb-5">
 									<div className="bg-dcyan rounded-full p-3 text-center">
-										<IconContext.Provider
-											value={{ size: '2em', color: 'silver' }}
-										>
+										<IconContext.Provider value={{ size: '2em' }}>
 											<GiPinballFlipper />
 										</IconContext.Provider>
 									</div>
