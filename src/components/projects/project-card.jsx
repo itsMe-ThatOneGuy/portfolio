@@ -1,20 +1,54 @@
+import { useEffect } from 'react';
+import { stagger, useAnimate, useInView } from 'framer-motion';
 import { IconContext } from 'react-icons';
 import { CiLink } from 'react-icons/ci';
 import { FiGithub } from 'react-icons/fi';
 
+const sequence = [
+	[
+		'img',
+		{
+			clipPath: ['inset(0 0 100% 0)', 'inset(0)'],
+			opacity: [0, 1],
+		},
+		{ duration: 0.8, delay: 0.3 },
+	],
+	['.title-container', { y: [-40, 0], opacity: [0, 1] }, { duration: 0.6 }],
+	[
+		'.tools',
+		{ y: [40, 0], opacity: [0, 1] },
+		{ duration: 0.8, delay: stagger(0.15) },
+	],
+	[
+		'.links',
+		{ x: [60, 0], opacity: [0, 1] },
+		{ duration: 0.4, delay: stagger(0.15) },
+	],
+];
+
 const ProjectCard = (props) => {
-	console.log(props);
+	const [scope, animate] = useAnimate();
+	const isInView = useInView(scope, { once: true });
+
+	useEffect(() => {
+		animate(sequence);
+	}, [isInView, animate]);
 
 	return (
-		<div className="flex flex-col space-y-2 p-6 lg:grid lg:grid-cols-2 lg:gap-3">
-			<img
-				width={'343px'}
-				height={'166px'}
-				className="w-full rounded h-64"
-				src={props.project.img}
-			/>
+		<div
+			ref={scope}
+			className="flex flex-col space-y-2 p-6 lg:grid lg:grid-cols-2 lg:gap-3"
+		>
+			<div>
+				<img
+					width={'343px'}
+					height={'166px'}
+					className="w-full rounded h-64"
+					src={props.project.img}
+				/>
+			</div>
 			<div className="inline-block p-3">
-				<div className="mb-4">
+				<div className="title-container mb-4">
 					<h2 className="text-xl text-plat font-semibold mb-2 underline decoration-dcyan">
 						{props.project.title}
 					</h2>
@@ -28,8 +62,12 @@ const ProjectCard = (props) => {
 							{props.project.tools.map((e) => {
 								return (
 									<li
-										key={props.project.tools.indexOf(e)}
-										className="p-1 bg-purp"
+										key={
+											props.project.tools.indexOf(e) +
+											Math.random() * 10 +
+											Math.random() * 10
+										}
+										className="tools p-1 bg-purp"
 									>
 										{e}
 									</li>
@@ -40,14 +78,14 @@ const ProjectCard = (props) => {
 					<div>
 						<ul className="flex justify-end items-center gap-5">
 							<IconContext.Provider value={{ size: '2.5em' }}>
-								<li className="font-semibold">
+								<li className="links font-semibold">
 									<a href={props.project.live} rel="noreferrer" target="_blank">
 										<CiLink />
 									</a>
 								</li>
 							</IconContext.Provider>
 							<IconContext.Provider value={{ size: '2em' }}>
-								<li className="font-semibold">
+								<li className="links font-semibold">
 									<a href={props.project.repo} rel="noreferrer" target="_blank">
 										<FiGithub />
 									</a>
