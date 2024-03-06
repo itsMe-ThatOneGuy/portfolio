@@ -2,7 +2,7 @@ const About = () => {
 	return (
 		<section id="about" className="scroll-m-8">
 			<div className="flex flex-col items-center bg-gradient-to-b from-vpurp to-dcyan w-full lg:gap-y-11">
-				<div className="flex flex-col justify-center w-4/5 mt-10 mb-16 p-5 rounded-3xl bg-grrey lg:w-1/2 lg:p-8">
+				<div className="flex flex-col justify-center w-4/5 mt-10 lg:mt-20 mb-16 p-5 rounded-3xl bg-grrey lg:w-1/2 lg:p-8">
 					<h2 className="text-lg mb-1 pb-2 text-plat">
 						Hi, I am <span className="text-vpurp font-bold">Matthew Smart</span>
 						!
@@ -20,7 +20,7 @@ const About = () => {
 				<div className="flex flex-col gap-5 justify-evenly items-center text-center w-full lg:grid lg:grid-cols-3 lg:w-[65%] lg:items-start lg:gap-11">
 					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
-							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
+							<h2 className="text-xl font-semibold mb-8 pb-4 text-plat">
 								Frontend
 							</h2>
 						</div>
@@ -44,7 +44,7 @@ const About = () => {
 					</div>
 					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
-							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
+							<h2 className="text-xl font-semibold mb-8 pb-4 text-plat">
 								Backend
 							</h2>
 						</div>
@@ -74,7 +74,7 @@ const About = () => {
 					</div>
 					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
-							<h2 className="text-xl font-semibold mb-3 pb-4 text-plat">
+							<h2 className="text-xl font-semibold mb-8 pb-4 text-plat">
 								Tools & technologies
 							</h2>
 						</div>
@@ -153,7 +153,7 @@ const About = () => {
 					</div>
 				</div>
 
-				<div className="mt-12 mb-12">
+				<div className="mt-12 mb-16">
 					<button className="py-3 px-6 bg-grrey border-2 border-plat rounded-full">
 						<h2 className="text-xl font-semibold">Resume</h2>
 					</button>

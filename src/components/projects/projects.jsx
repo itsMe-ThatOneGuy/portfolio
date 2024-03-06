@@ -17,18 +17,18 @@ const Projects = () => {
 	return (
 		<section id="projects" className="scroll-m-5 w-full">
 			<div className="flex flex-col items-center bg-gradient-to-b from-dcyan to-vpurp">
-				<div className="lg:w-1/2">
-					<div className="p-3 mx-3 mt-10">
+				<div className="lg:w-1/2 lg:mt-6">
+					<div className="p-3 mx-3 mb-8 lg:mb-16 mt-10">
 						<h2 className="text-2xl font-bold text-plat">Projects / Work</h2>
 					</div>
-					<div className="mb-16">
+					<div className="mb-16 lg:mb-20 mt-6">
 						{generateList().map((e) => {
 							return <ProjectCard key={projects.indexOf(e)} project={e} />;
 						})}
 					</div>
 				</div>
 				<div
-					className={`mb-16 ${
+					className={`mb-16 lg:mb-20 ${
 						projects.length > numberOfProjects ? '' : 'hidden'
 					}`}
 				>
@@ -38,7 +38,7 @@ const Projects = () => {
 						}}
 						className="py-3 px-6 bg-grrey border-2 border-plat rounded-full"
 					>
-						<h2 className="text-2xl">Show More</h2>
+						<h2 className="text-xl font-semibold">Show More</h2>
 					</button>
 				</div>
 			</div>

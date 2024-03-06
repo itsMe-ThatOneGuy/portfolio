@@ -9,11 +9,11 @@ const Contact = () => {
 	return (
 		<section id="contact" className="-scroll-m-6">
 			<div className="flex flex-col lg:items-center bg-gradient-to-b from-vpurp to-purp">
-				<div className="lg:w-1/2 flex flex-col">
-					<div className="p-3 mb-8 mx-2 mt-10">
+				<div className="lg:w-1/2 flex flex-col lg:mt-6">
+					<div className="p-3 mb-8 lg:mb-16 mx-3 mt-10">
 						<h2 className="text-2xl font-bold text-plat">Contact / Connect</h2>
 					</div>
-					<div className="flex flex-col items-center lg:flex-row lg:gap-14 mx-auto">
+					<div className="flex flex-col items-center lg:flex-row lg:gap-14 mx-auto mt-6">
 						<div>
 							<img
 								className="w-52 rounded-full border-2 border-vpurp mb-6 drop-shadow-xl"
@@ -117,7 +117,7 @@ const Contact = () => {
 							</ul>
 						</div>
 					</div>
-					<div className="mb-11 text-plat mx-auto">
+					<div className="mb-20 mt-10 text-plat mx-auto">
 						<IconContext.Provider value={{ size: '3em' }}>
 							<FaGhost />
 						</IconContext.Provider>
