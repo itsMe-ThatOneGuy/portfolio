@@ -15,14 +15,9 @@ const sequence = [
 	],
 	['.title-container', { y: [-40, 0], opacity: [0, 1] }, { duration: 0.6 }],
 	[
-		'.tools',
+		'li',
 		{ y: [40, 0], opacity: [0, 1] },
 		{ duration: 0.8, delay: stagger(0.15) },
-	],
-	[
-		'.links',
-		{ x: [60, 0], opacity: [0, 1] },
-		{ duration: 0.4, delay: stagger(0.15) },
 	],
 ];
 
