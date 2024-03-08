@@ -5,7 +5,7 @@ import { IoCloseSharp } from 'react-icons/io5';
 const Nav = (props) => {
 	return (
 		<nav>
-			<div className="text-xl hidden md:flex md:my-2 md:mr-5">
+			<div className="text-xl font-semibold hidden md:flex md:my-2 md:mr-5">
 				<ul className="flex gap-2">
 					<li className="pr-5">
 						<a href="#about">About</a>
