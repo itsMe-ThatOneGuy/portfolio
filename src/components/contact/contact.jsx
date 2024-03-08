@@ -61,7 +61,7 @@ const Contact = () => {
 						>
 							<img
 								className="w-52 rounded-full border-2 border-vpurp mb-6 drop-shadow-xl"
-								src="../../../public/profile.jpg"
+								src="profile.jpg"
 							/>
 						</motion.div>
 						<div className="lg:mb-11">
