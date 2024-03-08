@@ -104,7 +104,16 @@ const Header = () => {
 						</a>
 					</li>
 					<li className="pb-14">
-						<button>Resume</button>
+						<a
+							onClick={() => {
+								handleClick();
+							}}
+							href="resume/Matthew_Smart_Resume-2024.pdf"
+							rel="noreferrer"
+							target="_blank"
+						>
+							Resume
+						</a>
 					</li>
 					<li className="pb-14">
 						<IconContext.Provider value={{ color: '#E6E8E6' }}>

@@ -56,12 +56,15 @@ const Nav = (props) => {
 						transition={{ delay: 1, duration: 0.7 }}
 						className="pr-5"
 					>
-						<motion.button
+						<motion.a
+							href="resume/Matthew_Smart_Resume-2024.pdf"
+							rel="noreferrer"
+							target="_blank"
 							whileHover={{ color: ['black', '#730071'] }}
 							className="hover:underline decoration-wavy underline-offset-4 decoration-dcyan"
 						>
 							Resume
-						</motion.button>
+						</motion.a>
 					</motion.li>
 				</ul>
 			</div>

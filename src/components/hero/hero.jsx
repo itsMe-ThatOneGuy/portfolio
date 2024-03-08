@@ -41,7 +41,11 @@ const Hero = () => {
 									transition={{ duration: 0.25 }}
 									className="bg-dcyan rounded-full p-3 text-center"
 								>
-									<a>
+									<a
+										href="resume/Matthew_Smart_Resume-2024.pdf"
+										rel="noreferrer"
+										target="_blank"
+									>
 										<IoDocumentTextOutline />
 									</a>
 								</motion.li>

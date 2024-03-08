@@ -300,13 +300,19 @@ const About = () => {
 					viewport={{ once: true }}
 					className="mt-12 mb-16"
 				>
-					<motion.button
-						whileHover={{ scale: [1, 1.1] }}
-						whileTap={{ scale: 0.9 }}
-						className="py-3 px-6 bg-grrey border-2 border-plat rounded-full"
+					<a
+						href="resume/Matthew_Smart_Resume-2024.pdf"
+						rel="noreferrer"
+						target="_blank"
 					>
-						<h2 className="text-xl font-semibold">Resume</h2>
-					</motion.button>
+						<motion.button
+							whileHover={{ scale: [1, 1.1] }}
+							whileTap={{ scale: 0.9 }}
+							className="py-3 px-6 bg-grrey border-2 border-plat rounded-full"
+						>
+							<h2 className="text-xl font-semibold">Resume</h2>
+						</motion.button>
+					</a>
 				</motion.div>
 			</div>
 		</section>
