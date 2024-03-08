@@ -6,13 +6,16 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 
 const Hero = () => {
 	return (
-		<section id="home" className="h-[calc(100vh-65px)] scroll-m-[65px]">
+		<section
+			id="home"
+			className="h-[calc(100vh-65px)] scroll-m-[65px] lg:h-[calc(100vh-65px)] lg:scroll-m-[65px]"
+		>
 			<div className="h-full flex flex-col justify-evenly items-center bg-gradient-to-b from-purp to-vpurp lg:justify-end">
 				<div className="flex flex-col items-center lg:mb-36">
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ delay: 0.1, duration: 2 }}
+						transition={{ delay: 1, duration: 0.7, ease: 'linear' }}
 						className="p-3 text-center"
 					>
 						<h1 className="text-3xl text-plat font-extrabold mb-2 underline decoration-dcyan decoration-2 lg:mb-3">
@@ -25,7 +28,7 @@ const Hero = () => {
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ delay: 0.5, duration: 2 }}
+						transition={{ delay: 1.5, duration: 0.7, ease: 'linear' }}
 					>
 						<ul className="flex gap-6">
 							<IconContext.Provider value={{ size: '2em' }}>
@@ -86,8 +89,11 @@ const Hero = () => {
 				</div>
 				<motion.div
 					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ delay: 0.9, duration: 2 }}
+					animate={{
+						clipPath: ['inset(0 0 100% 0)', 'inset(0)'],
+						opacity: 1,
+					}}
+					transition={{ delay: 2, duration: 0.7, ease: 'linear' }}
 					className="mb-11 lg:mb-28"
 				>
 					<img

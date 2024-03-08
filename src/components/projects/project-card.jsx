@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { stagger, useAnimate, useInView } from 'framer-motion';
+import { motion, stagger, useAnimate, useInView } from 'framer-motion';
 import { IconContext } from 'react-icons';
 import { CiLink } from 'react-icons/ci';
 import { FiGithub } from 'react-icons/fi';
@@ -11,13 +11,13 @@ const sequence = [
 			clipPath: ['inset(0 0 100% 0)', 'inset(0)'],
 			opacity: [0, 1],
 		},
-		{ duration: 0.8, delay: 0.3 },
+		{ duration: 0.7, delay: 0.3 },
 	],
-	['.title-container', { y: [-40, 0], opacity: [0, 1] }, { duration: 0.6 }],
+	['.title-container', { y: [-40, 0], opacity: [0, 1] }, { duration: 0.7 }],
 	[
 		'li',
 		{ y: [40, 0], opacity: [0, 1] },
-		{ duration: 0.8, delay: stagger(0.15) },
+		{ duration: 0.7, delay: stagger(0.15) },
 	],
 ];
 
@@ -73,18 +73,26 @@ const ProjectCard = (props) => {
 					<div>
 						<ul className="flex justify-end items-center gap-5">
 							<IconContext.Provider value={{ size: '2.5em' }}>
-								<li className="links font-semibold">
+								<motion.li
+									whileHover={{ scale: [1, 1.5] }}
+									whileTap={{ scale: 1.1 }}
+									className="links font-semibold hover:text-grrey"
+								>
 									<a href={props.project.live} rel="noreferrer" target="_blank">
 										<CiLink />
 									</a>
-								</li>
+								</motion.li>
 							</IconContext.Provider>
 							<IconContext.Provider value={{ size: '2em' }}>
-								<li className="links font-semibold">
+								<motion.li
+									whileHover={{ scale: [1, 1.3] }}
+									whileTap={{ scale: 0.9 }}
+									className="links font-semibold hover:text-grrey"
+								>
 									<a href={props.project.repo} rel="noreferrer" target="_blank">
 										<FiGithub />
 									</a>
-								</li>
+								</motion.li>
 							</IconContext.Provider>
 						</ul>
 					</div>
