@@ -75,9 +75,13 @@ const ProjectCard = (props) => {
 							{props.project.live !== '' ? (
 								<IconContext.Provider value={{ size: '2em' }}>
 									<motion.li
-										whileHover={{ scale: [1, 1.5] }}
-										whileTap={{ scale: 1.1 }}
-										className="links font-semibold hover:text-grrey"
+										whileHover={{
+											scale: [null, 1.5, 1.4],
+											background: ['#558C8C', '#390040'],
+											color: ['black', '#558C8C'],
+										}}
+										whileTap={{ scale: 0.9 }}
+										transition={{ duration: 0.25 }}
 										className="links bg-dcyan rounded-full p-2 text-center font-semibold border border-grrey"
 									>
 										<a
@@ -95,9 +99,13 @@ const ProjectCard = (props) => {
 							{props.project.repo !== '' ? (
 								<IconContext.Provider value={{ size: '2em' }}>
 									<motion.li
-										whileHover={{ scale: [1, 1.3] }}
+										whileHover={{
+											scale: [null, 1.5, 1.4],
+											background: ['#558C8C', '#390040'],
+											color: ['black', '#558C8C'],
+										}}
 										whileTap={{ scale: 0.9 }}
-										className="links font-semibold hover:text-grrey"
+										transition={{ duration: 0.25 }}
 										className="links bg-dcyan rounded-full p-2 text-center font-semibold border border-grrey"
 									>
 										<a
