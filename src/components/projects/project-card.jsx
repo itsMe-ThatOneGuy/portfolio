@@ -72,28 +72,44 @@ const ProjectCard = (props) => {
 					</div>
 					<div>
 						<ul className="flex justify-end items-center gap-5">
-							<IconContext.Provider value={{ size: '2.5em' }}>
-								<motion.li
-									whileHover={{ scale: [1, 1.5] }}
-									whileTap={{ scale: 1.1 }}
-									className="links font-semibold hover:text-grrey"
-								>
-									<a href={props.project.live} rel="noreferrer" target="_blank">
-										<CiLink />
-									</a>
-								</motion.li>
-							</IconContext.Provider>
-							<IconContext.Provider value={{ size: '2em' }}>
-								<motion.li
-									whileHover={{ scale: [1, 1.3] }}
-									whileTap={{ scale: 0.9 }}
-									className="links font-semibold hover:text-grrey"
-								>
-									<a href={props.project.repo} rel="noreferrer" target="_blank">
-										<FiGithub />
-									</a>
-								</motion.li>
-							</IconContext.Provider>
+							{props.project.live !== '' ? (
+								<IconContext.Provider value={{ size: '2.5em' }}>
+									<motion.li
+										whileHover={{ scale: [1, 1.5] }}
+										whileTap={{ scale: 1.1 }}
+										className="links font-semibold hover:text-grrey"
+									>
+										<a
+											href={props.project.live}
+											rel="noreferrer"
+											target="_blank"
+										>
+											<CiLink />
+										</a>
+									</motion.li>
+								</IconContext.Provider>
+							) : (
+								<></>
+							)}
+							{props.project.repo !== '' ? (
+								<IconContext.Provider value={{ size: '2em' }}>
+									<motion.li
+										whileHover={{ scale: [1, 1.3] }}
+										whileTap={{ scale: 0.9 }}
+										className="links font-semibold hover:text-grrey"
+									>
+										<a
+											href={props.project.repo}
+											rel="noreferrer"
+											target="_blank"
+										>
+											<FiGithub />
+										</a>
+									</motion.li>
+								</IconContext.Provider>
+							) : (
+								<></>
+							)}
 						</ul>
 					</div>
 				</div>
