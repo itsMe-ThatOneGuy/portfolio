@@ -72,10 +72,10 @@ const Contact = () => {
 								viewport={{ once: true }}
 								className="flex flex-col p-5 lg:grid lg:grid-cols-2 lg:gap-3"
 							>
-								<li className="flex items-center gap-5 mb-5">
+								<li className="flex items-center gap-5 lg:gap-2 mb-5">
 									<motion.div
 										variants={icon}
-										className="bg-dcyan rounded-full p-3 text-center"
+										className="p-2 text-center text-dcyan"
 									>
 										<IconContext.Provider value={{ size: '2em' }}>
 											<IoMailOutline />
@@ -89,10 +89,10 @@ const Contact = () => {
 										</a>
 									</motion.div>
 								</li>
-								<li className="flex items-center gap-5 mb-5">
+								<li className="flex items-center gap-5 lg:gap-2 mb-5">
 									<motion.div
 										variants={icon}
-										className="bg-dcyan rounded-full p-3 text-center"
+										className="p-2 text-center text-dcyan"
 									>
 										<IconContext.Provider value={{ size: '2em' }}>
 											<FiGithub />
@@ -110,10 +110,10 @@ const Contact = () => {
 										</a>
 									</motion.div>
 								</li>
-								<li className="flex items-center gap-5 mb-5">
+								<li className="flex items-center gap-5 lg:gap-2 mb-5">
 									<motion.div
 										variants={icon}
-										className="bg-dcyan rounded-full p-3 text-center"
+										className="p-2 text-center text-dcyan"
 									>
 										<IconContext.Provider value={{ size: '2em' }}>
 											<FaLinkedinIn />
@@ -131,10 +131,10 @@ const Contact = () => {
 										</a>
 									</motion.div>
 								</li>
-								<li className="flex items-center gap-5 mb-5">
+								<li className="flex items-center gap-5 lg:gap-2 mb-5">
 									<motion.div
 										variants={icon}
-										className="bg-dcyan rounded-full p-3 text-center"
+										className="p-2 text-center text-dcyan"
 									>
 										<IconContext.Provider value={{ size: '2em' }}>
 											<FaInstagram />
@@ -152,10 +152,10 @@ const Contact = () => {
 										</a>
 									</motion.div>
 								</li>
-								<li className="flex items-center gap-5 mb-5">
+								<li className="flex items-center gap-5 lg:gap-2 mb-5">
 									<motion.div
 										variants={icon}
-										className="bg-dcyan rounded-full p-3 text-center"
+										className="p-2 text-center text-dcyan"
 									>
 										<IconContext.Provider value={{ size: '2em' }}>
 											<FaXTwitter />
@@ -173,10 +173,10 @@ const Contact = () => {
 										</a>
 									</motion.div>
 								</li>
-								<li className="flex items-center gap-5 mb-5">
+								<li className="flex items-center gap-5 lg:gap-2 mb-5">
 									<motion.div
 										variants={icon}
-										className="bg-dcyan rounded-full p-3 text-center"
+										className="p-2 text-center text-dcyan"
 									>
 										<IconContext.Provider value={{ size: '2em' }}>
 											<GiPinballFlipper />

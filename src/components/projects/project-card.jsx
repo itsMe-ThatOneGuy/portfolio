@@ -73,11 +73,12 @@ const ProjectCard = (props) => {
 					<div>
 						<ul className="flex justify-end items-center gap-5">
 							{props.project.live !== '' ? (
-								<IconContext.Provider value={{ size: '2.5em' }}>
+								<IconContext.Provider value={{ size: '2em' }}>
 									<motion.li
 										whileHover={{ scale: [1, 1.5] }}
 										whileTap={{ scale: 1.1 }}
 										className="links font-semibold hover:text-grrey"
+										className="links bg-dcyan rounded-full p-2 text-center font-semibold border border-grrey"
 									>
 										<a
 											href={props.project.live}
@@ -97,6 +98,7 @@ const ProjectCard = (props) => {
 										whileHover={{ scale: [1, 1.3] }}
 										whileTap={{ scale: 0.9 }}
 										className="links font-semibold hover:text-grrey"
+										className="links bg-dcyan rounded-full p-2 text-center font-semibold border border-grrey"
 									>
 										<a
 											href={props.project.repo}
