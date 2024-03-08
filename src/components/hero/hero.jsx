@@ -8,7 +8,7 @@ const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="h-[calc(100vh-65px)] scroll-m-[65px] lg:h-[calc(100vh-65px)] lg:scroll-m-[65px]"
+			className="h-[calc(100vh-65px)] scroll-m-[65px] lg:h-[calc(100vh-65px)] lg:scroll-m-[65px] md:h-full"
 		>
 			<div className="h-full flex flex-col justify-evenly items-center bg-gradient-to-b from-purp to-vpurp lg:justify-end">
 				<div className="flex flex-col items-center lg:mb-36">
@@ -98,7 +98,7 @@ const Hero = () => {
 				>
 					<img
 						className="w-52 rounded-full border-2 border-vpurp drop-shadow-xl"
-						src="../../../public/myicon.png"
+						src="myicon.png"
 					/>
 				</motion.div>
 			</div>
