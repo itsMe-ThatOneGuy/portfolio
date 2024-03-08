@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { IconContext } from 'react-icons';
 import { RiArrowUpDoubleLine } from 'react-icons/ri';
 
@@ -5,13 +6,13 @@ const Footer = () => {
 	return (
 		<footer className="bg-grrey h-fit">
 			<div className="flex flex-col justify-center items-center p-5">
-				<div>
+				<motion.div whileHover={{ scale: [1, 1.5] }}>
 					<IconContext.Provider value={{ size: '2em', color: '#E6E8E6' }}>
 						<a href="#home">
 							<RiArrowUpDoubleLine />
 						</a>
 					</IconContext.Provider>
-				</div>
+				</motion.div>
 				<div className="p-1">
 					<p className="text-plat font-semibold">
 						<span className="text-vpurp text-lg">©</span> Matthew Smart{' '}

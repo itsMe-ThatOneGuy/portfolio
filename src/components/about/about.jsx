@@ -1,8 +1,38 @@
+import { motion } from 'framer-motion';
+
 const About = () => {
+	const container = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: {
+				delayChildren: 1,
+				staggerChildren: 0.2,
+			},
+		},
+	};
+
+	const item = {
+		hidden: { y: -40, opacity: 0 },
+		visible: {
+			y: 0,
+			opacity: 1,
+		},
+	};
+
 	return (
 		<section id="about" className="scroll-m-8">
 			<div className="flex flex-col items-center bg-gradient-to-b from-vpurp to-dcyan w-full lg:gap-y-11">
-				<div className="flex flex-col justify-center w-4/5 mt-10 lg:mt-20 mb-16 p-5 rounded-3xl bg-grrey lg:w-1/2 lg:p-8">
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{
+						clipPath: ['inset(0 0 100% 0)', 'inset(0)'],
+						opacity: [0, 1],
+					}}
+					transition={{ delay: 0.3, duration: 0.7 }}
+					viewport={{ once: true }}
+					className="info-container flex flex-col justify-center w-4/5 mt-10 lg:mt-20 mb-16 p-5 rounded-3xl bg-grrey lg:w-1/2 lg:p-8"
+				>
 					<h2 className="text-lg mb-1 pb-2 text-plat">
 						Hi, I am <span className="text-vpurp font-bold">Matthew Smart</span>
 						!
@@ -16,148 +46,268 @@ const About = () => {
 						decided to learn to code. I started by making small games with
 						Python before finding web development.
 					</p>
-				</div>
+				</motion.div>
 				<div className="flex flex-col gap-5 justify-evenly items-center text-center w-full lg:grid lg:grid-cols-3 lg:w-[65%] lg:items-start lg:gap-11">
 					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
-							<h2 className="text-xl font-semibold mb-8 pb-4 text-plat">
+							<motion.h2
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{ delay: 0.3, duration: 0.7 }}
+								viewport={{ once: true }}
+								className="text-xl font-semibold mb-8 pb-4 text-plat"
+							>
 								Frontend
-							</h2>
+							</motion.h2>
 						</div>
-						<div className="grid grid-cols-4 items-center gap-3 text-6xl justify-center">
-							<div className="flex justify-center items-center">
+						<motion.div
+							variants={container}
+							initial="hidden"
+							whileInView={'visible'}
+							viewport={{ once: true }}
+							className="grid grid-cols-4 items-center gap-3 text-6xl justify-center"
+						>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-html5-plain colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-css3-plain colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-javascript-plain colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-react-original colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-tailwindcss-original colored"></i>
-							</div>
-						</div>
+							</motion.div>
+						</motion.div>
 					</div>
 					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
-							<h2 className="text-xl font-semibold mb-8 pb-4 text-plat">
+							<motion.h2
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{ delay: 0.3, duration: 0.7 }}
+								viewport={{ once: true }}
+								className="text-xl font-semibold mb-8 pb-4 text-plat"
+							>
 								Backend
-							</h2>
+							</motion.h2>
 						</div>
-						<div className="grid grid-cols-4 items-center gap-3 text-6xl">
-							<div className="flex justify-center items-center">
+						<motion.div
+							variants={container}
+							initial="hidden"
+							whileInView={'visible'}
+							viewport={{ once: true }}
+							className="grid grid-cols-4 items-center gap-3 text-6xl"
+						>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-nodejs-plain-wordmark colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-express-original"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
 								/>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-mongodb-plain-wordmark colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-mongoose-original colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-mysql-plain-wordmark"></i>
-							</div>
-						</div>
+							</motion.div>
+						</motion.div>
 					</div>
 					<div className="flex flex-col justify-center mb-4 w-4/5 lg:w-full">
 						<div>
-							<h2 className="text-xl font-semibold mb-8 pb-4 text-plat">
+							<motion.h2
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{ delay: 0.3, duration: 0.7 }}
+								viewport={{ once: true }}
+								className="text-xl font-semibold mb-8 pb-4 text-plat"
+							>
 								Tools & technologies
-							</h2>
+							</motion.h2>
 						</div>
-						<div className="grid grid-cols-4 items-center gap-3 text-6xl">
-							<div className="flex justify-center items-center">
+						<motion.div
+							variants={container}
+							initial="hidden"
+							whileInView={'visible'}
+							viewport={{ once: true }}
+							className="grid grid-cols-4 items-center gap-3 text-6xl"
+						>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-npm-original-wordmark colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-git-plain colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
 								/>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<i className="devicon-jest-plain colored"></i>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg"
 								/>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
 								/>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg"
 								/>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
 								/>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
 								/>
-							</div>
-							<div className="flex flex-col justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex flex-col justify-center items-center"
+							>
 								<img
 									className="w-11"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg"
 								/>
 								<p className="text-center text-sm">(BTW)</p>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg"
 								/>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
 								/>
-							</div>
-							<div className="flex justify-center items-center">
+							</motion.div>
+							<motion.div
+								variants={item}
+								className="flex justify-center items-center"
+							>
 								<img
 									className="w-14"
 									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"
 								/>
-							</div>
-						</div>
+							</motion.div>
+						</motion.div>
 					</div>
 				</div>
 
-				<div className="mt-12 mb-16">
-					<button className="py-3 px-6 bg-grrey border-2 border-plat rounded-full">
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{
+						opacity: 1,
+					}}
+					transition={{ delay: 0.3, duration: 1 }}
+					viewport={{ once: true }}
+					className="mt-12 mb-16"
+				>
+					<motion.button
+						whileHover={{ scale: [1, 1.1] }}
+						whileTap={{ scale: 0.9 }}
+						className="py-3 px-6 bg-grrey border-2 border-plat rounded-full"
+					>
 						<h2 className="text-xl font-semibold">Resume</h2>
-					</button>
-				</div>
+					</motion.button>
+				</motion.div>
 			</div>
 		</section>
 	);
