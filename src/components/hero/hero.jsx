@@ -38,6 +38,7 @@ const Hero = () => {
 										background: ['#558C8C', '#390040'],
 										color: ['black', '#558C8C'],
 									}}
+									whileTap={{ scale: 0.9 }}
 									transition={{ duration: 0.25 }}
 									className="bg-dcyan rounded-full p-3 text-center"
 								>
@@ -57,6 +58,7 @@ const Hero = () => {
 										background: ['#558C8C', '#390040'],
 										color: ['black', '#558C8C'],
 									}}
+									whileTap={{ scale: 0.9 }}
 									transition={{ duration: 0.3 }}
 									className="bg-dcyan rounded-full p-3"
 								>
@@ -76,6 +78,7 @@ const Hero = () => {
 										background: ['#558C8C', '#390040'],
 										color: ['black', '#558C8C'],
 									}}
+									whileTap={{ scale: 0.9 }}
 									transition={{ duration: 0.3 }}
 									className="bg-dcyan rounded-full p-3 "
 								>
